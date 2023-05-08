@@ -1,13 +1,12 @@
-//typescript의 클래스역할
-//1. 객체를 생성하는 생성자역할
-//2. 클래스 자체를 타입으로 사용할 수 있다.
 import Todo from "../models/todos";
+import classes from "./Todos.module.css"
+import TodoItem from "./TodoItem";
 
 const Todos:React.FC<{items:Todo[];}>  = (props) => {
 	return (
-		<ul>
-            {props.items.map((item)=>(
-            <li key={item.id}>{item.text}{item.id}</li>
+		<ul className={classes.item}>
+            { props.items.map((item)=>(
+			<TodoItem key={item.id} text={item.text}></TodoItem>
             ))}
 		</ul>
 	);
