@@ -2,11 +2,13 @@
   width: 40rem;
   margin: 2rem auto;
 }
+
 .form label {
   display: block;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
+
 .form input {
   display: block;
   width: 100%;
@@ -21,6 +23,7 @@
   border-bottom-left-radius: 0;
   margin-bottom: 0.5rem;
 }
+
 .form button {
   font: inherit;
   background-color: #ebb002;
@@ -30,6 +33,7 @@
   border-radius: 4px;
   cursor: pointer;
 }
+
 .form button:hover,
 .form button:active {
   background-color: #ebc002;
